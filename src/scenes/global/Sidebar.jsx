@@ -62,7 +62,7 @@ const Sidebar = () => {
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
-        <Menu iconShape="square">
+        <Menu>
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
@@ -77,7 +77,7 @@ const Sidebar = () => {
                   ADMINIS
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                  <MapOutlinedIcon />
+                  <MenuOutlinedIcon />
                 </IconButton>
               </Box>
             )}
