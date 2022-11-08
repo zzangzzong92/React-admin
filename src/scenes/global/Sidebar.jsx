@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { Prosidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
@@ -62,7 +61,7 @@ const Sidebar = () => {
         },
       }}
     >
-      <Prosidebar collapsed={isCollapsed}>
+      <ProSidebar collapsed={isCollapsed}>
         <Menu iconShape="square">
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
@@ -87,7 +86,7 @@ const Sidebar = () => {
           {/* user */}
           {!isCollapsed && (
             <Box mb="25px">
-              <Box display="flex" justifyContent="center" alignItems="center">
+              <Box display="flex" justifyContent="center" alignitems="center">
                 <img
                   alt="profile"
                   width="100px"
@@ -216,7 +215,7 @@ const Sidebar = () => {
             />
           </Box>
         </Menu>
-      </Prosidebar>
+      </ProSidebar>
     </Box>
   );
 };
